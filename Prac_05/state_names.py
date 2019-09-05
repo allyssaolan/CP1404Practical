@@ -12,6 +12,7 @@ STATE_NAMES = {"QLD": "Queensland",
                "ACT": "Australian Capital Territory",
                "VIC": "Victoria",
                "TAS": "Tasmania"}
+
 # print(STATE_NAMES)
 for key, val in STATE_NAMES.items():
     print("{} is {}".format(key, val))
