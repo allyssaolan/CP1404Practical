@@ -13,13 +13,13 @@ STATE_NAMES = {"QLD": "Queensland",
                "VIC": "Victoria",
                "TAS": "Tasmania"}
 # print(STATE_NAMES)
-for key, val in STATE_NAMES.items():
-    print("{} is {}".format(key, val))
+for short_state, state_name in STATE_NAMES.items():
+    print("{} is {}".format(short_state, state_name))
 
-state = input("Enter short state: ").upper()
-while state != "":
-    if state in STATE_NAMES:
-        print(state, "is", STATE_NAMES[state])
+state_name = input("Enter short state: ").upper()
+while state_name != "":
+    if state_name in STATE_NAMES:
+        print(state_name, "is", STATE_NAMES[state_name])
     else:
         print("Invalid short state")
     state = input("Enter short state: ").upper()
